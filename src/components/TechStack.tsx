@@ -171,9 +171,7 @@ export default function TechStacksShowcase() {
           />
         </div>
 
-        <footer className="mt-10 text-xs text-zinc-500">
-          Tip: Duplicate a <code className="px-1 rounded bg-zinc-800/60">Section</code> to add more groups (e.g., Testing, Auth).
-        </footer>
+        
       </div>
     </div>
   );
