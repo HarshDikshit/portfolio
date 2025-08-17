@@ -28,13 +28,14 @@ export default function MobileNav() {
     const [open, setOpen] = useState(false)
 
   const handleClick = (id: string) => {
+    
+    setOpen(false) // close the sheet first
     setTimeout(() => {
       const el = document.getElementById(id)
       if (el) {
         el.scrollIntoView()
       }
-    }, 500) // small delay so sheet closes first
-    setOpen(false) // close the sheet first
+    }, 1000) // small delay so sheet closes first
     
   }
 
