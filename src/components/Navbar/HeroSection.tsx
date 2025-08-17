@@ -52,8 +52,8 @@ const HeroSection = () => {
       <GridBackground />
       <div className="flex flex-col-reverse h-full  md:flex-row justify-center items-center mx-auto my-auto  gap-x-10  relative  z-10 ">
         <div className="max-w-[89vw] md:max-w-[50vw] lg:max-w-[50vw] flex flex-col items-center justify-center  md:items-start">
-          <h2 className="uppercase tracking-widest text-xs text-center md:text-left text-blue-100 max-w-80">
-            Dynamic Web Magic with Next.js
+          <h2 className="uppercase tracking-widest text-xs text-center md:text-left text-blue-100 max-w-80 mt-5">
+            React | NextJS | React Native
           </h2>
 
           <TextGenerateEffect
