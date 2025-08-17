@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 import React from 'react';
 
@@ -13,7 +14,7 @@ const MyPicture = () => {
           rotateY={6}
           className="w-full h-full"
         >
-          <img
+          <Image
             src="./logo.jpg"
             className="w-full h-full object-cover rounded-full transition-transform duration-300 group-hover/card:scale-105"
             alt="Profile picture"
