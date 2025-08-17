@@ -1,12 +1,13 @@
 "use client"
 
 import React from "react";
-import { Spotlight } from "./ui/Spotlight";
-import { GridBackground } from "./ui/GridBackground";
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-import MagicButton from "./ui/MagicButton";
+import { Spotlight } from "@/components/ui/Spotlight";
+import { GridBackground } from "@/components/ui/GridBackground";
+import { TextGenerateEffect } from "@/components/ui/TextGenerateEffect";
+import MagicButton from "@/components/ui/MagicButton";
 import { CloudDownload } from "lucide-react";
 import MyPicture from "./MyPicture";
+import MobileNav from "./MobileNav";
 
 const HeroSection = () => {
   const handleDownload = () => {
@@ -34,6 +35,9 @@ const HeroSection = () => {
   };
   return (
     <div className=" pt-3 min-h-screen justify-center items-center flex flex-col">
+      <div className="block md:hidden right-0 top-0 absolute mt-5 mx-5">
+        <MobileNav/>
+      </div>
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -47,7 +51,7 @@ const HeroSection = () => {
       </div>
       <GridBackground />
       <div className="flex flex-col-reverse h-full  md:flex-row justify-center items-center mx-auto my-auto  gap-x-10  relative  z-10 ">
-        <div className="max-w-[89vw] md:max-w-[2xl] lg:max-w-[50vw] flex flex-col items-center justify-center  md:items-start">
+        <div className="max-w-[89vw] md:max-w-[50vw] lg:max-w-[50vw] flex flex-col items-center justify-center  md:items-start">
           <h2 className="uppercase tracking-widest text-xs text-center md:text-left text-blue-100 max-w-80">
             Dynamic Web Magic with Next.js
           </h2>

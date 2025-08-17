@@ -67,7 +67,7 @@ function TiltCard({ children }: { children: React.ReactNode }) {
 
 export default function AcademicTimeline() {
   return (
-    <section className="pb-16">
+    <section id="academics" className="pb-16">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-16">
           My Path of <span className="text-purple-400">Learning</span> & <span className="text-purple-400">Academics</span> 📚✨
