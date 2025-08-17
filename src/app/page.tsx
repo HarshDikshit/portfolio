@@ -5,16 +5,14 @@ import { FloatingNav } from '@/components/ui/Floating'
 import { HomeIcon } from 'lucide-react'
 import AcademicTimeline from '@/components/AcademicTimeline'
 import React from 'react'
+import { navItems } from '@/data'
 
 function Home() {
   return (
     <main className='relative bg-black flex flex-col sm:px-10 px-5 overflow-hidden mx-auto justify-center items-center'>
       <div className='max-w-7xl w-full'>
         <FloatingNav
-          navItems={[
-            {name: 'Home', link: '#'},
-            {name: 'About', link: '#about'}
-          ]}/>
+          navItems={navItems}/>
         <HeroSection/>
         <Grid/>
         <RecentProjects/>
