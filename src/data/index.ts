@@ -93,7 +93,7 @@ export const projects = [
     id: 3,
     title: "College Stuffs - React App",
     des: "A REAL Software-as-a-Service app to deliver regular college stuffs like syllabus, notes and important notices.",
-    img: "/p3.svg",
+    img: "/p3.png",
     iconLists: ["/re.svg", "/tail.svg", "/js.svg", "/mongo.svg", "/firebase.svg"],
     link: "https://ece-ie-42c52.web.app/",
   },
@@ -101,9 +101,9 @@ export const projects = [
     id: 4,
     title: "Stylish Todo Mobile App - React Native",
     des: "A Todo App which stores your regular todos and helps you in follow up with your regular tasks.",
-    img: "/p4.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://github.com/adrianhajdin/iphone",
+    img: "/p4.png",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/expo.svg",],
+    link: "https://github.com/HarshDikshit/sylish-todo-rn",
   },
 ];
 
