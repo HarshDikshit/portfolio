@@ -105,7 +105,7 @@ const Section = ({
 
 export default function TechStacksShowcase() {
   return (
-    <div className="min-h-[60vh] w-full  text-zinc-100 p-6 md:p-10">
+    <div id="techstack" className="min-h-[60vh] w-full  text-zinc-100 p-6 md:p-10">
       <div className="mx-auto max-w-6xl">
         <header className="mb-8 md:mb-12">
           <div className="inline-flex items-center gap-2 rounded-full border border-violet-700/40 bg-zinc-900/60 px-3 py-1 text-xs uppercase tracking-wider">

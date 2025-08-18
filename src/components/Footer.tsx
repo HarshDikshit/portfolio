@@ -2,8 +2,8 @@ import { Github, Linkedin } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className=" border-t border-white/[0.5] mt-12 py-6">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 space-y-4 md:space-y-0">
+    <footer className="border-t border-white/[0.5] mt-12 py-6">
+      <div className="max-w-6xl lg:w-full mx-auto flex flex-col md:flex-row items-center justify-between px-6 space-y-4 md:space-y-0">
         {/* Left side text */}
         <p className="text-violet-200 text-sm">
           © {new Date().getFullYear()} Harsh Dixit. All rights reserved.

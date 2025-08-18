@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Notebook } from "lucide-react";
 import Image from "next/image";
 import React, { useState } from "react";
 
@@ -67,11 +68,21 @@ function TiltCard({ children }: { children: React.ReactNode }) {
 
 export default function AcademicTimeline() {
   return (
-    <section id="academics" className="pb-16">
+    <section id="academics" className="min-h-[60vh] w-full  text-zinc-100 p-6 md:p-10">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-16">
-          My Path of <span className="text-purple-400">Learning</span> & <span className="text-purple-400">Academics</span> 📚✨
-        </h2>
+        
+         <header className="mb-8 md:mb-12">
+          <div className="inline-flex items-center gap-2 rounded-full border border-violet-700/40 bg-zinc-900/60 px-3 py-1 text-xs uppercase tracking-wider">
+            <Notebook className="h-3.5 w-3.5" />
+            <span>Academics</span>
+          </div>
+          <h1 className="mt-3 text-2xl md:text-4xl font-bold leading-tight">
+            My Path of <span className="text-purple-400">Learning</span> & <span className="text-purple-400">Academics</span> 📚✨
+          </h1>
+          <p className="mt-2 text-sm md:text-base text-zinc-400 text-justify">
+            My academic journey has been driven by dedication, curiosity, and consistent performance. Currently, I am continuing my higher education, expanding my knowledge and skills across both theoretical and practical domains. Alongside academics, I actively engage in projects and hands-on learning experiences that allow me to apply classroom concepts to real-world problem-solving
+          </p>
+        </header>
         <div className="relative">
           {/* Vertical line */}
           <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-1 bg-white/80 rounded-full -translate-x-1/2"></div>

@@ -12,7 +12,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { Book, Contact, CrossIcon, MenuIcon } from "lucide-react";
+import { Book, Code, Contact, CrossIcon, MenuIcon } from "lucide-react";
 import { useState } from "react";
 import { GoBrowser, GoProject } from "react-icons/go";
 
@@ -20,6 +20,7 @@ export const navItems = [
   { name: "About", link: "about", icon: <GoBrowser /> },
   { name: "Projects", link: "projects", icon: <GoProject /> },
   { name: "Academics", link: "academics", icon: <Book /> },
+  { name: "Tech Stack", link: "techstack", icon: <Code /> },
   { name: "Contact", link: "contact", icon: <Contact /> },
 ];
 

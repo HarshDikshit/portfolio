@@ -2,14 +2,24 @@ import { projects } from "@/data";
 import React from "react";
 import { PinContainer } from "./ui/3d-pin";
 import { FaLocationArrow } from "react-icons/fa";
+import { Server } from "lucide-react";
 
 const RecentProjects = () => {
   return (
-    <div id="projects" className="py-20 flex flex-col text-center">
-      <h2 className="heading text-4xl font-bold">
-        A small selection of{" "}
+    <section id="projects" className="min-h-[60vh] w-full  text-zinc-100 p-6 md:p-10">
+      <header className="mb-8 md:mb-12 max-w-6xl">
+          <div className="inline-flex items-center gap-2 rounded-full border border-violet-700/40 bg-zinc-900/60 px-3 py-1 text-xs uppercase tracking-wider">
+            <Server className="h-3.5 w-3.5" />
+            <span>Projects</span>
+          </div>
+          <h1 className="mt-3 text-2xl md:text-4xl font-bold leading-tight">
+            A small selection of{" "}
         <span className="text-purple-300">recent projects</span>
-      </h2>
+          </h1>
+          <p className="mt-2 text-sm md:text-base text-justify text-zinc-400">
+            I have built a diverse range of projects that highlight my skills in both hardware and software development. These projects not only strengthened my technical expertise but also enhanced my ability to design systems that merge creativity, functionality, and real-world application.
+          </p>
+        </header>
 
       <div className="flex flex-wrap justify-center items-center p-4 gap-x-24 gap-y-8  ">
         {projects.map(({ id, title, des, img, iconLists, link }) => (
@@ -22,7 +32,7 @@ const RecentProjects = () => {
                 <div className="relative w-full  h-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
                   <img src="/bg.png" alt="bg-img" />
                 </div>
-                <img src={img}  alt={title} className="z-10 absolute bottom-0" />
+                <img src={img}  alt={title} className="z-10 absolute bottom-0 left-0 w-full h-full" />
               </div>
 
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
@@ -51,7 +61,7 @@ const RecentProjects = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
