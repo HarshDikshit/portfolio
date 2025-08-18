@@ -8,6 +8,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Send } from "lucide-react";
 import { log } from "console";
+import axios from "axios";
+import { toast } from "sonner";
 
 // 3D Tilt Card wrapper
 function TiltCard({ children }: { children: React.ReactNode }) {
@@ -26,6 +28,8 @@ function TiltCard({ children }: { children: React.ReactNode }) {
     x.set(px);
     y.set(py);
   }
+
+
 
   return (
     <motion.div
@@ -60,22 +64,23 @@ export default function ContactFormUI() {
     const description = formData.get("description");
 
     try {
-      await fetch("/api/send-email", {
+      await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          to: "harshdixit15031975@gmail.com",
+          to: process.env.MY_EMAIL as string,
           email,
           title,
           description,
         }),
       });
 
-      
+      toast.success("Your response has been sent to the owner successfully.")
       form.reset();
     } catch (err) {
+            toast.error("Error Occured while sending your response. ")
+
       console.log(err);
-      
     } finally {
       setLoading(false);
     }
